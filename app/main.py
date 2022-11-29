@@ -29,4 +29,4 @@ def api(content):
     data = query(content, parameters)
     return jsonify({"content":data.replace("###", "")})#render_template("api.html", content = data.replace("###", ""))#data.replace("###", "")
 
-app.run(debug=True)
+app.run()#debug=True
